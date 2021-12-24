@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-attachment: scroll !important;
+  scroll-behavior: smooth;
+}
+::selection {
+  color: var(--white-colour);
+  background: var(--main-colour);
+}
+img {
+  user-select: none;
+}
+button {
+  user-select: none;
+}
+body {
+  background-image: url("../Image/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#clock {
+  position: relative;
+  background-image: url("../Image/Clock.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  height: 40vw;
+  width: 40vw;
+}
+#clock::before{
+    content: "";
+    position: absolute;
+    width: 2vw;
+    top: 47.7%;
+    left: 47.5%;
+    height: 2vw;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 1;
+}
+#hour,
+#minute,
+#second {
+  position: absolute;
+  background-color: black;
+  border-radius: 5px;
+}
+#hour {
+  width: 1.5%;
+  height: 18%;
+  top: 32.1%;
+  left: 49.1%;
+  transform-origin: bottom;
+}
+#minute {
+  top: 22.1%;
+  width: 0.8%;
+  height: 28%;
+  left: 49.5%;
+  transform-origin: bottom;
+  
+}
+#second {
+  width: 0.3%;
+  height: 45%;
+  top: 10%;
+  left: 49.8%;
+  transform-origin: 0% 88.5%;
+}
