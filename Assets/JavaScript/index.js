@@ -1,12 +1,12 @@
 setInterval(() => {
     date = new Date();
-    hourtime = date.getHours();
-    minutetime = date.getMinutes();
-    secondtime = date.getSeconds();
-    hourrotate = 30 * hourtime + minutetime / 2;
-    minuterotate = 6 * minutetime;
-    secondrotate = 6 * secondtime;
-    hour.style.transform = `rotate(${hourrotate}deg)`;
-    minute.style.transform = `rotate(${minuterotate}deg)`;
-    second.style.transform = `rotate(${secondrotate}deg)`;
+    hourTime = date.getHours();
+    minuteTime = date.getMinutes();
+    secondTime = date.getSeconds();
+    hourRotate = 30 * hourTime + minuteTime / 2;
+    minuteRotate = 6 * minuteTime;
+    secondRotate = 6 * secondTime;
+    hour.style.transform = `rotate(${hourRotate}deg)`;
+    minute.style.transform = `rotate(${minuteRotate}deg)`;
+    second.style.transform = `rotate(${secondRotate}deg)`;
 }, 1000);
