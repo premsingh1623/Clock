@@ -4,6 +4,9 @@
   background-attachment: scroll !important;
   scroll-behavior: smooth;
 }
+:root{
+  --black-colour : black;
+}
 ::selection {
   color: var(--white-colour);
   background: var(--main-colour);
@@ -37,7 +40,7 @@ body {
     top: 47.7%;
     left: 47.5%;
     height: 2vw;
-    background-color: black;
+    background-color: var(--black-colour);
     border-radius: 50%;
     z-index: 1;
 }
@@ -45,7 +48,7 @@ body {
 #minute,
 #second {
   position: absolute;
-  background-color: black;
+  background-color: var(--black-colour);
   border-radius: 5px;
 }
 #hour {
